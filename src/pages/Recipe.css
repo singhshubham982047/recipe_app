@@ -1,0 +1,149 @@
+.detail {
+  display: flex;
+}
+
+.detail > div > h2 {
+  margin-bottom: 1rem;
+  color: #313131;
+}
+.active {
+  background: linear-gradient(35deg, #494949, #313131);
+  color: white;
+}
+.detail > div > img {
+  margin-top: 2rem;
+  width: 400px;
+  border-radius: 3px;
+}
+.info {
+  margin-left: 5rem;
+}
+
+button {
+  padding: 1rem 2rem;
+  color: #313131;
+  background: white;
+  border: 2px solid black;
+  margin-right: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+p {
+  margin-top: 12px;
+  width: 450px;
+  height: 200px;
+
+  overflow: auto;
+}
+ol {
+  width: 450px;
+  height: 200px;
+  overflow-y: auto;
+}
+
+ul {
+  margin-top: 0.5rem;
+}
+li {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 400px;
+}
+p::-webkit-scrollbar {
+  width: 5px;
+}
+p::-webkit-scrollbar-track {
+  background: #e8e8e8;
+
+  border-radius: 10px;
+}
+
+p::-webkit-scrollbar-thumb {
+  background: #888;
+
+  border-radius: 10px;
+}
+p::-webkit-scrollbar-track:hover {
+  background: #555;
+}
+
+@media only screen and (max-width: 768px) {
+  .detail {
+    flex-direction: column;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+  button {
+    margin: 5px;
+    width: auto;
+    padding: 1.5rem 2rem;
+    color: #313131;
+    background: white;
+    border: 2px solid black;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .info {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .summary {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  p {
+    font-size: 25px;
+    width: auto;
+  }
+  li {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .detail {
+    flex-direction: column;
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  button {
+    margin: 5px;
+    width: auto;
+    padding: 1rem 2rem;
+    color: #313131;
+    background: white;
+    border: 2px solid black;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .info {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .summary {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  p {
+    font-size: 25px;
+    width: auto;
+  }
+  li {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,44 @@
+.navLink {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-top: 1rem;
+  margin-left: 50%;
+  transform: translate(-50%, 0%);
+  text-decoration: none;
+  background: linear-gradient(35deg, #494949, #313131);
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+}
+.navLink h4 {
+  color: white;
+  font-size: 0.8rem;
+}
+svg {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.navLink.active {
+  background: linear-gradient(#f27121, #e94057);
+}
+
+@media (max-width: 768px) {
+  .navLink {
+    margin: 10px;
+    min-width: 6rem;
+    height: 6rem;
+    transform: translate(0%, 0%);
+  }
+
+  .navLink h4 {
+    font-size: 1rem;
+  }
+
+  svg {
+    font-size: 1.5rem;
+  }
+}
